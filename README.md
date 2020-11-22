@@ -4,3 +4,5 @@
 
 ## Aim:
 - Capture tcpdump and strace information on both Master and Slave VMs prior to the Master rebooting the Slave
+
+This idea was adopted from RedHat's article on rolling packet captures along with tracing logs in logfiles.
