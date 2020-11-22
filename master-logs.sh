@@ -5,7 +5,7 @@
 mkdir -p /root/master-logs
 chmod g+w /root/master-logs
 
-## Use $! to capture the process ID of the last job that was backgrounded (tcpdump), and save it to a variable called DUMP_PID
+## Use $! to capture the process ID of the last job that was backgrounded (tcpdump), and save it to a variable called TCPDUMP_PID
 ## Run tcpdump on all interfaces
 
 /usr/sbin/tcpdump -s0 -w /root/master-logs/`hostname`.pcap -W 4 -C 300 -i any &TCPDUMP_PID=$!
